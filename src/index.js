@@ -19,7 +19,7 @@ const content = makeEl("content");
 tabContainer.append(homeTab, menuTab, contactTab);
 header.append(tabContainer);
 
-content.appendChild(about());
+content.appendChild(menu());
 
 
 document.body.appendChild(header);
