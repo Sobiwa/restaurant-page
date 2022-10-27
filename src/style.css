@@ -33,7 +33,7 @@ body {
 .tab-container {
     list-style: none;
     display: flex;
-    gap: calc(16px + 1vw);
+    gap: calc(8px + 2vw);
     font-size: calc(1rem + 1vw);
 }
 
@@ -146,13 +146,24 @@ body {
     font-size: 2rem;
 }
 
+.mealTime {
+    font-size: 1.4rem;
+    color: #bdbdbd;
+    border-bottom: 3px dotted var(--purple);
+}
+
+.dinner {
+    margin-top: 30px;
+}
+
 .menu-pic {
     height: 200px;
     width: auto;
     border-radius: 50%;
 }
 
-.menu-title {
+.menu-title,
+.message {
     font-size: 2rem;
 }
 
@@ -163,10 +174,17 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 10px 0;
 }
 
 .menu-sub-title {
     margin-bottom: 10px;
+}
+
+.contact-pic {
+    height: 300px;
+    width: auto;
+    border-radius: 50px;
 }
 
 

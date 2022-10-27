@@ -9,6 +9,7 @@ function makeEl(className, type = "div", text = '') {
     element.innerText = text;
     return element;
 }
+
 const header = makeEl("header");
 const tabContainer = makeEl("tab-container", "ul")
 const homeTab = makeEl("tab", "li", "Home");
@@ -19,7 +20,22 @@ const content = makeEl("content");
 tabContainer.append(homeTab, menuTab, contactTab);
 header.append(tabContainer);
 
-content.appendChild(menu());
+content.appendChild(about());
+
+homeTab.addEventListener('click', () => {
+    content.removeChild(content.firstChild);
+    content.appendChild(about());
+})
+
+menuTab.addEventListener("click", () => {
+    content.removeChild(content.firstChild);
+    content.appendChild(menu());
+})
+
+contactTab.addEventListener("click", () => {
+    content.removeChild(content.firstChild);
+    content.appendChild(contact());
+})
 
 
 document.body.appendChild(header);
