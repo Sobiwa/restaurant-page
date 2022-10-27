@@ -30,7 +30,7 @@ export default function menu() {
     const item3 = makeEl("full-item");
     const title3 = makeEl("menu-title", "div", "Wafers");
     const subtitle3 = makeEl("menu-sub-title", "div",
-    "They're organic and dog love them!");
+    "They're organic and dogs love them!");
     const waferBarry = makePic(wafer);
     item3.append(title3, subtitle3, waferBarry);
 
